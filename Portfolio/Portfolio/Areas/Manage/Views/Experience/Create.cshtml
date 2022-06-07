@@ -1,0 +1,42 @@
+﻿@model Experience
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Manage/Views/Shared/_ManageLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <form method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="WorkName">WorkName</label>
+                <input asp-for="WorkName" class="form-control" placeholder="WorkName">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="CompanyName">CompanyName</label>
+                <input asp-for="CompanyName" class="form-control" placeholder="CompanyName">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="PresentTime">PresentTime</label>
+                <input asp-for="PresentTime" class="form-control" placeholder="PresentTime">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="PastTime">PastTime</label>
+                <input asp-for="PastTime" class="form-control" placeholder="PastTime">
+            </div>
+        </div>
+        <div class="form-row">
+
+            <div class="form-group col-md-4">
+                <label asp-for="WorkDesc">Description</label>
+                <input asp-for="WorkDesc" class="form-control" placeholder="Description">
+            </div>
+
+
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
+
+
